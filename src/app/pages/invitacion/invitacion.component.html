@@ -1,4 +1,10 @@
-<div class="container w-container">
+
+<div class="container w-container" *ngIf="!done">
+    <div class="div-block-2">
+    </div>
+</div>
+
+<div class="container w-container" *ngIf="done">
     <div class="div-block">
         <div class="section-6 wf-section">
            

@@ -24,6 +24,30 @@
     -o-object-fit: fill;
     object-fit: fill;
   }
+
+  .div-block-2 {
+    position: relative;
+    display: flex;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0px;
+    float: right;
+    clear: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    background-color: #b4bd85;
+    background-image: url("./../../../assets/boda_pronto.png");
+    background-position: 50% 50%;
+    background-size: auto 60vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    -webkit-text-fill-color: inherit;
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
   
   .container {
     position: static;
@@ -124,6 +148,11 @@
       background-image: url("./../../../assets/invitacion_front.jpg");
     }
   
+    .div-block-2 {
+      background-image: url("./../../../assets/boda_pronto.png");
+      background-size: 30vh;
+    }
+
     .button-2 {
       font-size: 10px;
       line-height: 1vh;
@@ -194,6 +223,13 @@
       background-image: url("./../../../assets/invitacion_front.jpg");
     }
   
+    .div-block-2 {
+      margin-top: 0vh;
+      flex: 1;
+      background-image: url("./../../../assets/boda_pronto.png");
+      background-size: 30vh;
+    }
+
     .button-3 {
       margin-bottom: 32vh;
       font-size: 10px;

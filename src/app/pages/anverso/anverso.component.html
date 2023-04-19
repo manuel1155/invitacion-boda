@@ -1,17 +1,32 @@
-<div class="container w-container">
+<div class="container w-container" *ngIf="!done">
+    <div class="div-block-2">
+    </div>
+</div>
+
+
+<div class="container w-container" *ngIf="done">
     <div class="div-block">
-        <div class="section-6 wf-section">
-            <a class="button-8 w-button button-17" (click)="goToUrl('mapa')" id="btnMapa">Ver ubicación</a>
+        <div class="section-7 wf-section">
+            <div class="text-block">CIVIL Y RECEPCIÓN</div>
+            <div class="text-block-2">LA NORIA DEL PALMAR</div>
+            <div class="text-block-3">PROL. PROFESOR PEDRO VALLEJO 2557
+                <br/>19:00 Hrs<br/>
+                FORMAL - NO NIÑOS
+            </div>
+            <a class="w-button button-17" (click)="goToUrl('mapa')">Ver ubicación</a>
         </div>
-        <div class="section-5 wf-section">
-            <a class="button-7 w-button button-17" (click)="goToUrl('mesa')" id="btnMesa">Mesa de
-                regalos</a>
+        <div class="section-9 wf-section">
+            <div class="text-block-4">SUGERENCIA DE REGALO</div>
+            <br>
+            <div class="text-block-5">EVENTO LIVERPOOL: 5 1 1 3 5 1 2 1</div>
+            <a class="button-9 w-button button-17" (click)="goToUrl('mesa')">Mesa de regalos</a>
         </div>
-        <div class="section-4 wf-section">
-            <a href="#" class="button-6 w-button button-17">Confirmar asistencia</a>
+        <div class="section-8 wf-section">
+            <div class="text-block-8">NÚMERO DE PASES</div>
+            <div class="text-block-7">{{ invitado.pases }}</div>
         </div>
         <div class="section-3 wf-section">
-            <a (click)="goToFront()" class="button-5 w-button button-17">&lt;</a>
+            <a class="button-5 w-button button-17" *ngIf="invitado.confirmado" (click)="goToFront()">&lt;</a><a class="button-9 w-button button-17" (click)="goToUrl('confirmar')" *ngIf="!invitado.confirmado">Confirmar asistencia</a>
         </div>
     </div>
 </div>

@@ -1,0 +1,25 @@
+[debug] [2023-04-19T05:32:42.489Z] ----------------------------------------------------------------------
+[debug] [2023-04-19T05:32:42.491Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-19T05:32:42.491Z] CLI Version:   11.25.1
+[debug] [2023-04-19T05:32:42.491Z] Platform:      win32
+[debug] [2023-04-19T05:32:42.491Z] Node Version:  v16.17.0
+[debug] [2023-04-19T05:32:42.492Z] Time:          Wed Apr 19 2023 00:32:42 GMT-0500 (hora de verano central)
+[debug] [2023-04-19T05:32:42.492Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-19T05:32:42.557Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-19T05:32:42.558Z] > authorizing via signed-in user (pepememe1155@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\OneDrive - GRUPO OLINX S.A. DE C.V\Documentos\Proyectos CAPEM Local\TDC\prueba-front
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+

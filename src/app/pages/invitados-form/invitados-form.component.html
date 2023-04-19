@@ -1,0 +1,75 @@
+<div class="container-fluid px-1 py-5 mx-auto principal-form">
+    <div class="row d-flex justify-content-center">
+        <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+
+            <div class="card">
+                <h5 class="text-center mb-4">Registro de invitados</h5>
+                <form class="form-card" [formGroup]="invitadoForm">
+                    <!-- <div class="row">
+                        <div class="col mb-3">
+                            <label class="form-label">Title</label>
+                            <input type="text" formControlName="nombre" class="form-control" [ngClass]="{ 'is-invalid': f['nombre'].value!='' && f['nombre'].errors }" />
+                            <div *ngIf="f['nombre'].value!='' && f['nombre'].errors" class="invalid-feedback">
+                                <div *ngIf="f['nombre'].errors['minlength']">Title is required</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-12 flex-column d-flex">
+                            <label class="form-control-label px-3">Nombres: <span class="text-danger"> *</span></label>
+                            <input type="text" formControlName="nombre" id="nombre" name="nombre"
+                                placeholder="Nombre completo del invitado">
+                        </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Número de celular: <span class="text-danger">
+                                    *</span></label>
+                            <input type="text" (keypress)="keyPress($event)" formControlName="celular" id="celular"
+                                name="celular">
+                            <div class="invalid-feedback">
+                                <div>El celular es requerido</div>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Confirmar con: <span class="text-danger">
+                                    *</span></label>
+                            <select formControlName="confirma_con" id="confirma_con" name="confirma_con">
+                                <option value="0" disabled>Selecciona una opción</option>
+                                <option value="novio">Novio</option>
+                                <option value="novia">Novia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                class="form-control-label px-3">Número de pases<span class="text-danger">
+                                    *</span></label>
+                            <select formControlName="pases" name="pases" id="pases">
+                                <option value="0" disabled>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="form-group col-sm-6">
+                            <button type="button" (click)="postInvitado()" class="btn btn-success"
+                                [disabled]="!invitadoForm.valid">Guardar</button>
+                            <button type="button" class="btn btn-danger" (click)="goToListInv()">Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+               <!--  <pre> {{ invitadoForm.value | json  }}</pre> -->
+            </div>
+        </div>
+    </div>
+</div>
